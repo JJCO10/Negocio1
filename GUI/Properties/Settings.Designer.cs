@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Negocio1.Properties
+namespace GUI.Properties
 {
 
 

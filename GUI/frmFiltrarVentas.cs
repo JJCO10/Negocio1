@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Negocio1
+namespace GUI
 {
-    public partial class Form1 : Form
+    public partial class frmFiltrarVentas : Form
     {
-        public Form1()
+        public frmFiltrarVentas()
         {
             InitializeComponent();
         }
