@@ -11,7 +11,7 @@ namespace ENTITY
         public string idVenta { get; set; }
         public string saborBoli { get;set; }
         public double precio { get; set; }
-        public int catidadBoli { get; set; }
+        public int cantidadBoli { get; set; }
         public string fechaBoli { get; set; }
 
     }
