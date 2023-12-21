@@ -8,7 +8,34 @@ using DAL;
 
 namespace BLL
 {
-    internal class VentaService
+    public class VentaService : Funciones_venta
     {
+       VentaRepository repository = new VentaRepository();
+
+        public string RegistrarVenta(Venta venta)
+        {
+            var msg = repository.RegistrarVenta(venta);
+            return msg;
+        }
+
+        public string ModificarVenta(Venta Venta)
+        {
+            return repository.ModifcarVenta(Venta);
+        }
+
+        public List<Venta> ConsultarVenta()
+        {
+            var msg = repository.ConsultarVenta();
+            return msg;
+        }
+
+        public List<Venta> BuscarFiltrado(string x)
+        {
+            return ConsultarVenta().Where(
+                item => item.idVenta == x || 
+                item.saborBoli.Contains(x) || 
+                item.fechaBoli.Contains(x)).ToList();
+        }
+
     }
 }

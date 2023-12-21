@@ -65,7 +65,7 @@ namespace DAL
 
         }
 
-        public List<Venta> ConsultarCliente()
+        public List<Venta> ConsultarVenta()
         {
             List<Venta> list = new List<Venta>();
             string ssql = "select * from ventas";
