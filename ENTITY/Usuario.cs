@@ -8,7 +8,7 @@ namespace ENTITY
 {
     public class Usuario
     {
-        public string Usurio { get; set; }
+        public string Usurios { get; set; }
         public string Contraseña { get; set; }
 
         public Usuario()
@@ -16,9 +16,9 @@ namespace ENTITY
 
         }
 
-        public Usuario(string usurio, string contraseña)
+        public Usuario(string usurios, string contraseña)
         {
-            Usurio = usurio;
+            Usurios = usurios;
             Contraseña = contraseña;
         }
     }

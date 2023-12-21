@@ -1,0 +1,17 @@
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Debug\GUI.exe.config
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Debug\GUI.exe
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Debug\GUI.pdb
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Debug\BLL.dll
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Debug\ENTITY.dll
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Debug\DAL.dll
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Debug\BLL.pdb
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Debug\ENTITY.pdb
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Debug\DAL.pdb
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.frmIniciarSesion.resources
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.exe
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.pdb

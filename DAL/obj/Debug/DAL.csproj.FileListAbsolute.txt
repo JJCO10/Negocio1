@@ -1,0 +1,9 @@
+C:\Users\JJCO10\Desktop\Negocio1\DAL\bin\Debug\DAL.dll
+C:\Users\JJCO10\Desktop\Negocio1\DAL\bin\Debug\DAL.pdb
+C:\Users\JJCO10\Desktop\Negocio1\DAL\bin\Debug\ENTITY.dll
+C:\Users\JJCO10\Desktop\Negocio1\DAL\bin\Debug\ENTITY.pdb
+C:\Users\JJCO10\Desktop\Negocio1\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\JJCO10\Desktop\Negocio1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\JJCO10\Desktop\Negocio1\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\JJCO10\Desktop\Negocio1\DAL\obj\Debug\DAL.dll
+C:\Users\JJCO10\Desktop\Negocio1\DAL\obj\Debug\DAL.pdb
