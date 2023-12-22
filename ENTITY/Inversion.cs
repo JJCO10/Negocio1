@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ENTITY
 {
-    internal class Inversion
+    public class Inversion
     {
         public string idInversion { get; set; }
         public string producto { get; set; }
         public double precioProducto { get; set; }
-        public string fechaBoli { get; set; }
+        public string fechaInversion { get; set; }
     }
 }
