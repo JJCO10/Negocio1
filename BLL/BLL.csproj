@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Funciones_inversion.cs" />
     <Compile Include="Funciones_venta.cs" />
     <Compile Include="InversionService.cs" />
     <Compile Include="VentaService.cs" />

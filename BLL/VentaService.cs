@@ -29,7 +29,7 @@ namespace BLL
             return msg;
         }
 
-        public List<Venta> BuscarFiltrado(string x)
+        public List<Venta> BuscarFiltradoVenta(string x)
         {
             return ConsultarVenta().Where(
                 item => item.idVenta == x || 
