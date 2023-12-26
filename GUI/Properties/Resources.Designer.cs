@@ -193,6 +193,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap inserte_moneda1 {
+            get {
+                object obj = ResourceManager.GetObject("inserte-moneda1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap papel_escrito {
             get {
                 object obj = ResourceManager.GetObject("papel-escrito", resourceCulture);
