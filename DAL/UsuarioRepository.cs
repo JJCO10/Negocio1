@@ -13,7 +13,7 @@ namespace DAL
         public List<Usuario> ConsultarUsuario()
         {
             List<Usuario> list = new List<Usuario>();
-            string ssql = "select * from PRESTAMISTAS";
+            string ssql = "select * from Usuarios";
 
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();
@@ -34,8 +34,8 @@ namespace DAL
         {
             Usuario usuario = new Usuario();
 
-            usuario.Usurios = Convert.ToString(reader["Usuario"]);
-            usuario.Contraseña = Convert.ToString(reader["Contraseña"]);
+            usuario.Usurios = Convert.ToString(reader["Vendedor"]);
+            usuario.Contraseña = Convert.ToString(reader["Clave"]);
 
             return usuario;
         }
