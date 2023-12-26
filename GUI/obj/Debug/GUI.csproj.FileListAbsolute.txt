@@ -16,3 +16,4 @@ C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.exe
 C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.pdb
 C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.frmMenuPrincipal.resources
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.frmCrudVentas.resources

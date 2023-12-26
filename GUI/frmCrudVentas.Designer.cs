@@ -94,8 +94,8 @@
             this.btnBuscar.BackgroundImage = global::GUI.Properties.Resources.buscarVenta;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Location = new System.Drawing.Point(58, 22);
             this.btnBuscar.Name = "btnBuscar";
@@ -109,8 +109,8 @@
             this.btnInsertarVenta.BackgroundImage = global::GUI.Properties.Resources.agregar_producto;
             this.btnInsertarVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnInsertarVenta.FlatAppearance.BorderSize = 0;
-            this.btnInsertarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnInsertarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnInsertarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnInsertarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnInsertarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsertarVenta.Location = new System.Drawing.Point(58, 120);
             this.btnInsertarVenta.Name = "btnInsertarVenta";
@@ -124,8 +124,8 @@
             this.btnModificarVenta.BackgroundImage = global::GUI.Properties.Resources.papel_escrito;
             this.btnModificarVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnModificarVenta.FlatAppearance.BorderSize = 0;
-            this.btnModificarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnModificarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnModificarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnModificarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnModificarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarVenta.Location = new System.Drawing.Point(58, 218);
             this.btnModificarVenta.Name = "btnModificarVenta";
@@ -139,8 +139,8 @@
             this.btnEliminarVenta.BackgroundImage = global::GUI.Properties.Resources.eliminar_producto;
             this.btnEliminarVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEliminarVenta.FlatAppearance.BorderSize = 0;
-            this.btnEliminarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnEliminarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnEliminarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnEliminarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnEliminarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarVenta.Location = new System.Drawing.Point(58, 316);
             this.btnEliminarVenta.Name = "btnEliminarVenta";
@@ -154,8 +154,8 @@
             this.btnVolverMenu.BackgroundImage = global::GUI.Properties.Resources.devolver;
             this.btnVolverMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVolverMenu.FlatAppearance.BorderSize = 0;
-            this.btnVolverMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnVolverMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnVolverMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnVolverMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnVolverMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolverMenu.Location = new System.Drawing.Point(58, 414);
             this.btnVolverMenu.Name = "btnVolverMenu";
