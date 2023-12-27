@@ -39,21 +39,29 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnInsertarVenta = new System.Windows.Forms.Button();
             this.btnModificarVenta = new System.Windows.Forms.Button();
             this.btnEliminarVenta = new System.Windows.Forms.Button();
             this.btnVolverMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvIdVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvFechaVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSaborBoli = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCantidadBoli = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.txtCantidadBoli);
             this.groupBox1.Controls.Add(this.txtPrecioTotalBoli);
             this.groupBox1.Controls.Add(this.txtSaborBoli);
@@ -64,7 +72,6 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.btnInsertarVenta);
             this.groupBox1.Controls.Add(this.btnModificarVenta);
@@ -79,7 +86,7 @@
             // 
             // txtCantidadBoli
             // 
-            this.txtCantidadBoli.Location = new System.Drawing.Point(269, 386);
+            this.txtCantidadBoli.Location = new System.Drawing.Point(246, 380);
             this.txtCantidadBoli.Name = "txtCantidadBoli";
             this.txtCantidadBoli.Size = new System.Drawing.Size(200, 20);
             this.txtCantidadBoli.TabIndex = 17;
@@ -87,29 +94,28 @@
             // 
             // txtPrecioTotalBoli
             // 
-            this.txtPrecioTotalBoli.Location = new System.Drawing.Point(269, 486);
+            this.txtPrecioTotalBoli.Location = new System.Drawing.Point(246, 476);
             this.txtPrecioTotalBoli.Name = "txtPrecioTotalBoli";
             this.txtPrecioTotalBoli.Size = new System.Drawing.Size(200, 20);
             this.txtPrecioTotalBoli.TabIndex = 16;
             // 
             // txtSaborBoli
             // 
-            this.txtSaborBoli.Location = new System.Drawing.Point(269, 279);
+            this.txtSaborBoli.Location = new System.Drawing.Point(246, 269);
             this.txtSaborBoli.Name = "txtSaborBoli";
             this.txtSaborBoli.Size = new System.Drawing.Size(200, 20);
             this.txtSaborBoli.TabIndex = 15;
-            this.txtSaborBoli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSaborBoli_KeyPress);
             // 
             // txtIdBoli
             // 
-            this.txtIdBoli.Location = new System.Drawing.Point(269, 73);
+            this.txtIdBoli.Location = new System.Drawing.Point(246, 66);
             this.txtIdBoli.Name = "txtIdBoli";
             this.txtIdBoli.Size = new System.Drawing.Size(200, 20);
             this.txtIdBoli.TabIndex = 14;
             // 
             // dtpFechaVenta
             // 
-            this.dtpFechaVenta.Location = new System.Drawing.Point(269, 172);
+            this.dtpFechaVenta.Location = new System.Drawing.Point(246, 164);
             this.dtpFechaVenta.Name = "dtpFechaVenta";
             this.dtpFechaVenta.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaVenta.TabIndex = 13;
@@ -118,11 +124,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Cyan;
-            this.label5.Location = new System.Drawing.Point(264, 442);
+            this.label5.Location = new System.Drawing.Point(244, 448);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(156, 29);
+            this.label5.Size = new System.Drawing.Size(139, 25);
             this.label5.TabIndex = 12;
             this.label5.Text = "Precio Total";
             // 
@@ -130,11 +136,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Cyan;
-            this.label4.Location = new System.Drawing.Point(264, 333);
+            this.label4.Location = new System.Drawing.Point(244, 352);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 29);
+            this.label4.Size = new System.Drawing.Size(198, 25);
             this.label4.TabIndex = 11;
             this.label4.Text = "Cantidad de Bolis";
             // 
@@ -142,11 +148,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Cyan;
-            this.label3.Location = new System.Drawing.Point(264, 228);
+            this.label3.Location = new System.Drawing.Point(241, 241);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 29);
+            this.label3.Size = new System.Drawing.Size(160, 25);
             this.label3.TabIndex = 10;
             this.label3.Text = "Sabor del Boli";
             // 
@@ -154,11 +160,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Cyan;
-            this.label2.Location = new System.Drawing.Point(264, 120);
+            this.label2.Location = new System.Drawing.Point(244, 136);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 29);
+            this.label2.Size = new System.Drawing.Size(178, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Fecha de Venta";
             // 
@@ -166,25 +172,14 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Cyan;
-            this.label1.Location = new System.Drawing.Point(264, 22);
+            this.label1.Location = new System.Drawing.Point(244, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 29);
+            this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 8;
             this.label1.Text = "Codigo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::GUI.Properties.Resources.inserte_moneda1;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(499, 19);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(456, 488);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
             // 
             // btnBuscar
             // 
@@ -215,6 +210,7 @@
             this.btnInsertarVenta.Size = new System.Drawing.Size(106, 92);
             this.btnInsertarVenta.TabIndex = 5;
             this.btnInsertarVenta.UseVisualStyleBackColor = false;
+            this.btnInsertarVenta.Click += new System.EventHandler(this.btnInsertarVenta_Click);
             // 
             // btnModificarVenta
             // 
@@ -271,6 +267,56 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Location = new System.Drawing.Point(452, 172);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(514, 335);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvIdVenta,
+            this.dgvFechaVenta,
+            this.dgvSaborBoli,
+            this.dgvCantidadBoli,
+            this.dgvPrecioVenta});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(508, 316);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // dgvIdVenta
+            // 
+            this.dgvIdVenta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvIdVenta.HeaderText = "ID";
+            this.dgvIdVenta.Name = "dgvIdVenta";
+            // 
+            // dgvFechaVenta
+            // 
+            this.dgvFechaVenta.HeaderText = "Fecha Venta";
+            this.dgvFechaVenta.Name = "dgvFechaVenta";
+            // 
+            // dgvSaborBoli
+            // 
+            this.dgvSaborBoli.HeaderText = "Sabor";
+            this.dgvSaborBoli.Name = "dgvSaborBoli";
+            // 
+            // dgvCantidadBoli
+            // 
+            this.dgvCantidadBoli.HeaderText = "Cantidad";
+            this.dgvCantidadBoli.Name = "dgvCantidadBoli";
+            // 
+            // dgvPrecioVenta
+            // 
+            this.dgvPrecioVenta.HeaderText = "Total";
+            this.dgvPrecioVenta.Name = "dgvPrecioVenta";
+            // 
             // frmCrudVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,8 +327,9 @@
             this.Text = "Gestion de Ventas";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -296,7 +343,6 @@
         private System.Windows.Forms.Button btnModificarVenta;
         private System.Windows.Forms.Button btnEliminarVenta;
         private System.Windows.Forms.Button btnVolverMenu;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -307,5 +353,12 @@
         private System.Windows.Forms.TextBox txtSaborBoli;
         private System.Windows.Forms.TextBox txtIdBoli;
         private System.Windows.Forms.DateTimePicker dtpFechaVenta;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvIdVenta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvFechaVenta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSaborBoli;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCantidadBoli;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrecioVenta;
     }
 }
