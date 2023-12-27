@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvIdVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvFechaVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSaborBoli = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCantidadBoli = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtCantidadBoli = new System.Windows.Forms.TextBox();
             this.txtPrecioTotalBoli = new System.Windows.Forms.TextBox();
             this.txtSaborBoli = new System.Windows.Forms.TextBox();
@@ -45,17 +52,10 @@
             this.btnEliminarVenta = new System.Windows.Forms.Button();
             this.btnVolverMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dgvIdVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvFechaVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvSaborBoli = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCantidadBoli = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -84,6 +84,56 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Location = new System.Drawing.Point(452, 172);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(514, 335);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvIdVenta,
+            this.dgvFechaVenta,
+            this.dgvSaborBoli,
+            this.dgvCantidadBoli,
+            this.dgvPrecioVenta});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(508, 316);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // dgvIdVenta
+            // 
+            this.dgvIdVenta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvIdVenta.HeaderText = "ID";
+            this.dgvIdVenta.Name = "dgvIdVenta";
+            // 
+            // dgvFechaVenta
+            // 
+            this.dgvFechaVenta.HeaderText = "Fecha Venta";
+            this.dgvFechaVenta.Name = "dgvFechaVenta";
+            // 
+            // dgvSaborBoli
+            // 
+            this.dgvSaborBoli.HeaderText = "Sabor";
+            this.dgvSaborBoli.Name = "dgvSaborBoli";
+            // 
+            // dgvCantidadBoli
+            // 
+            this.dgvCantidadBoli.HeaderText = "Cantidad";
+            this.dgvCantidadBoli.Name = "dgvCantidadBoli";
+            // 
+            // dgvPrecioVenta
+            // 
+            this.dgvPrecioVenta.HeaderText = "Total";
+            this.dgvPrecioVenta.Name = "dgvPrecioVenta";
+            // 
             // txtCantidadBoli
             // 
             this.txtCantidadBoli.Location = new System.Drawing.Point(246, 380);
@@ -105,6 +155,7 @@
             this.txtSaborBoli.Name = "txtSaborBoli";
             this.txtSaborBoli.Size = new System.Drawing.Size(200, 20);
             this.txtSaborBoli.TabIndex = 15;
+            this.txtSaborBoli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSaborBoli_KeyPress_1);
             // 
             // txtIdBoli
             // 
@@ -267,56 +318,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(452, 172);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(514, 335);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvIdVenta,
-            this.dgvFechaVenta,
-            this.dgvSaborBoli,
-            this.dgvCantidadBoli,
-            this.dgvPrecioVenta});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(508, 316);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // dgvIdVenta
-            // 
-            this.dgvIdVenta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvIdVenta.HeaderText = "ID";
-            this.dgvIdVenta.Name = "dgvIdVenta";
-            // 
-            // dgvFechaVenta
-            // 
-            this.dgvFechaVenta.HeaderText = "Fecha Venta";
-            this.dgvFechaVenta.Name = "dgvFechaVenta";
-            // 
-            // dgvSaborBoli
-            // 
-            this.dgvSaborBoli.HeaderText = "Sabor";
-            this.dgvSaborBoli.Name = "dgvSaborBoli";
-            // 
-            // dgvCantidadBoli
-            // 
-            this.dgvCantidadBoli.HeaderText = "Cantidad";
-            this.dgvCantidadBoli.Name = "dgvCantidadBoli";
-            // 
-            // dgvPrecioVenta
-            // 
-            this.dgvPrecioVenta.HeaderText = "Total";
-            this.dgvPrecioVenta.Name = "dgvPrecioVenta";
-            // 
             // frmCrudVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,9 +328,9 @@
             this.Text = "Gestion de Ventas";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

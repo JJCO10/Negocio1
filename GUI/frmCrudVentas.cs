@@ -48,18 +48,9 @@ namespace GUI
             }
         }
 
-        private void txtSaborBoli_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
-            {
-                e.Handled = true;
-                return;
-            }
-        }
-
         private void btnInsertarVenta_Click(object sender, EventArgs e)
         {
-            if (txtIdBoli.Text == "" && txtSaborBoli.Text == "" && txtCantidadBoli.Text == "")
+            if (txtIdBoli.Text == "" || txtSaborBoli.Text == "" || txtCantidadBoli.Text == "" || txtPrecioTotalBoli.Text == "")
             {
                 MessageBox.Show("Por favor, Llene todas las casillas");
             }
@@ -74,6 +65,15 @@ namespace GUI
                     fechaBoli = Convert.ToString(dtpFechaVenta.Value.ToString("d"))
                 };
                 InsertarVenta(venta);
+            }
+        }
+
+        private void txtSaborBoli_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                e.Handled = true;
+                return;
             }
         }
     }
