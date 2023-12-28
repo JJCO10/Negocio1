@@ -111,7 +111,7 @@
             this.groupBox2.Controls.Add(this.dgvConsultaVentas);
             this.groupBox2.Location = new System.Drawing.Point(452, 122);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(514, 335);
+            this.groupBox2.Size = new System.Drawing.Size(514, 340);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             // 
@@ -127,7 +127,7 @@
             this.dgvConsultaVentas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvConsultaVentas.Location = new System.Drawing.Point(3, 16);
             this.dgvConsultaVentas.Name = "dgvConsultaVentas";
-            this.dgvConsultaVentas.Size = new System.Drawing.Size(508, 316);
+            this.dgvConsultaVentas.Size = new System.Drawing.Size(508, 321);
             this.dgvConsultaVentas.TabIndex = 0;
             this.dgvConsultaVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultaVentas_CellContentClick);
             // 
@@ -159,7 +159,7 @@
             // 
             // txtCantidadBoli
             // 
-            this.txtCantidadBoli.Location = new System.Drawing.Point(245, 352);
+            this.txtCantidadBoli.Location = new System.Drawing.Point(245, 361);
             this.txtCantidadBoli.Name = "txtCantidadBoli";
             this.txtCantidadBoli.Size = new System.Drawing.Size(200, 20);
             this.txtCantidadBoli.TabIndex = 17;
@@ -167,14 +167,14 @@
             // 
             // txtPrecioTotalBoli
             // 
-            this.txtPrecioTotalBoli.Location = new System.Drawing.Point(245, 430);
+            this.txtPrecioTotalBoli.Location = new System.Drawing.Point(245, 439);
             this.txtPrecioTotalBoli.Name = "txtPrecioTotalBoli";
             this.txtPrecioTotalBoli.Size = new System.Drawing.Size(200, 20);
             this.txtPrecioTotalBoli.TabIndex = 16;
             // 
             // txtSaborBoli
             // 
-            this.txtSaborBoli.Location = new System.Drawing.Point(245, 268);
+            this.txtSaborBoli.Location = new System.Drawing.Point(245, 277);
             this.txtSaborBoli.Name = "txtSaborBoli";
             this.txtSaborBoli.Size = new System.Drawing.Size(200, 20);
             this.txtSaborBoli.TabIndex = 15;
@@ -182,7 +182,7 @@
             // 
             // txtIdBoli
             // 
-            this.txtIdBoli.Location = new System.Drawing.Point(245, 109);
+            this.txtIdBoli.Location = new System.Drawing.Point(245, 118);
             this.txtIdBoli.Name = "txtIdBoli";
             this.txtIdBoli.Size = new System.Drawing.Size(200, 20);
             this.txtIdBoli.TabIndex = 14;
@@ -190,7 +190,7 @@
             // dtpFechaVenta
             // 
             this.dtpFechaVenta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaVenta.Location = new System.Drawing.Point(245, 187);
+            this.dtpFechaVenta.Location = new System.Drawing.Point(245, 196);
             this.dtpFechaVenta.Name = "dtpFechaVenta";
             this.dtpFechaVenta.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaVenta.TabIndex = 13;
@@ -201,7 +201,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Cyan;
-            this.label5.Location = new System.Drawing.Point(243, 402);
+            this.label5.Location = new System.Drawing.Point(243, 411);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 25);
             this.label5.TabIndex = 12;
@@ -213,7 +213,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Cyan;
-            this.label4.Location = new System.Drawing.Point(243, 324);
+            this.label4.Location = new System.Drawing.Point(243, 333);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(198, 25);
             this.label4.TabIndex = 11;
@@ -225,7 +225,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Cyan;
-            this.label3.Location = new System.Drawing.Point(240, 240);
+            this.label3.Location = new System.Drawing.Point(240, 249);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(160, 25);
             this.label3.TabIndex = 10;
@@ -237,7 +237,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Cyan;
-            this.label2.Location = new System.Drawing.Point(243, 159);
+            this.label2.Location = new System.Drawing.Point(243, 168);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(178, 25);
             this.label2.TabIndex = 9;
@@ -249,7 +249,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Cyan;
-            this.label1.Location = new System.Drawing.Point(243, 81);
+            this.label1.Location = new System.Drawing.Point(243, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 8;
