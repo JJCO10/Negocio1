@@ -162,5 +162,14 @@
   <ItemGroup>
     <None Include="bin\Debug\imagenes\buscarVenta.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes\comercio-electronico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes\lapiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes\comercio-electronico2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

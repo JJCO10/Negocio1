@@ -30,10 +30,6 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnInsertarInversion = new System.Windows.Forms.Button();
-            this.btnModificarInversion = new System.Windows.Forms.Button();
-            this.btnEliminarInversion = new System.Windows.Forms.Button();
-            this.btnVolverMenu = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -44,7 +40,6 @@
             this.dgvProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPrecioInversion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtProducto = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtIdInversion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpFechaInversion = new System.Windows.Forms.DateTimePicker();
@@ -52,11 +47,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnInsertarInversion = new System.Windows.Forms.Button();
+            this.btnModificarInversion = new System.Windows.Forms.Button();
+            this.btnEliminarInversion = new System.Windows.Forms.Button();
+            this.btnVolverMenu = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaInversiones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -97,70 +97,6 @@
             this.label7.Size = new System.Drawing.Size(95, 25);
             this.label7.TabIndex = 32;
             this.label7.Text = "JJCO10";
-            // 
-            // btnInsertarInversion
-            // 
-            this.btnInsertarInversion.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnInsertarInversion.BackgroundImage = global::GUI.Properties.Resources.agregar_producto;
-            this.btnInsertarInversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnInsertarInversion.FlatAppearance.BorderSize = 0;
-            this.btnInsertarInversion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.btnInsertarInversion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnInsertarInversion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInsertarInversion.Location = new System.Drawing.Point(58, 37);
-            this.btnInsertarInversion.Name = "btnInsertarInversion";
-            this.btnInsertarInversion.Size = new System.Drawing.Size(120, 104);
-            this.btnInsertarInversion.TabIndex = 31;
-            this.btnInsertarInversion.UseVisualStyleBackColor = false;
-            this.btnInsertarInversion.Click += new System.EventHandler(this.btnInsertarInversion_Click);
-            // 
-            // btnModificarInversion
-            // 
-            this.btnModificarInversion.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnModificarInversion.BackgroundImage = global::GUI.Properties.Resources.papel_escrito;
-            this.btnModificarInversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnModificarInversion.FlatAppearance.BorderSize = 0;
-            this.btnModificarInversion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.btnModificarInversion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnModificarInversion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarInversion.Location = new System.Drawing.Point(58, 161);
-            this.btnModificarInversion.Name = "btnModificarInversion";
-            this.btnModificarInversion.Size = new System.Drawing.Size(120, 104);
-            this.btnModificarInversion.TabIndex = 30;
-            this.btnModificarInversion.UseVisualStyleBackColor = false;
-            this.btnModificarInversion.Click += new System.EventHandler(this.btnModificarInversion_Click);
-            // 
-            // btnEliminarInversion
-            // 
-            this.btnEliminarInversion.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnEliminarInversion.BackgroundImage = global::GUI.Properties.Resources.eliminar_producto;
-            this.btnEliminarInversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEliminarInversion.FlatAppearance.BorderSize = 0;
-            this.btnEliminarInversion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.btnEliminarInversion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnEliminarInversion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarInversion.Location = new System.Drawing.Point(58, 280);
-            this.btnEliminarInversion.Name = "btnEliminarInversion";
-            this.btnEliminarInversion.Size = new System.Drawing.Size(120, 104);
-            this.btnEliminarInversion.TabIndex = 29;
-            this.btnEliminarInversion.UseVisualStyleBackColor = false;
-            this.btnEliminarInversion.Click += new System.EventHandler(this.btnEliminarInversion_Click);
-            // 
-            // btnVolverMenu
-            // 
-            this.btnVolverMenu.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnVolverMenu.BackgroundImage = global::GUI.Properties.Resources.devolver;
-            this.btnVolverMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVolverMenu.FlatAppearance.BorderSize = 0;
-            this.btnVolverMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.btnVolverMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnVolverMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolverMenu.Location = new System.Drawing.Point(58, 402);
-            this.btnVolverMenu.Name = "btnVolverMenu";
-            this.btnVolverMenu.Size = new System.Drawing.Size(120, 104);
-            this.btnVolverMenu.TabIndex = 28;
-            this.btnVolverMenu.UseVisualStyleBackColor = false;
-            this.btnVolverMenu.Click += new System.EventHandler(this.btnVolverMenu_Click);
             // 
             // label6
             // 
@@ -245,15 +181,6 @@
             this.txtProducto.Size = new System.Drawing.Size(200, 20);
             this.txtProducto.TabIndex = 24;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkBlue;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(226, 520);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtIdInversion
             // 
             this.txtIdInversion.Location = new System.Drawing.Point(234, 166);
@@ -327,6 +254,79 @@
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
             // 
+            // btnInsertarInversion
+            // 
+            this.btnInsertarInversion.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnInsertarInversion.BackgroundImage = global::GUI.Properties.Resources.comercio_electronico;
+            this.btnInsertarInversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnInsertarInversion.FlatAppearance.BorderSize = 0;
+            this.btnInsertarInversion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnInsertarInversion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnInsertarInversion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsertarInversion.Location = new System.Drawing.Point(58, 37);
+            this.btnInsertarInversion.Name = "btnInsertarInversion";
+            this.btnInsertarInversion.Size = new System.Drawing.Size(120, 104);
+            this.btnInsertarInversion.TabIndex = 31;
+            this.btnInsertarInversion.UseVisualStyleBackColor = false;
+            this.btnInsertarInversion.Click += new System.EventHandler(this.btnInsertarInversion_Click);
+            // 
+            // btnModificarInversion
+            // 
+            this.btnModificarInversion.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnModificarInversion.BackgroundImage = global::GUI.Properties.Resources.lapiz;
+            this.btnModificarInversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnModificarInversion.FlatAppearance.BorderSize = 0;
+            this.btnModificarInversion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnModificarInversion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnModificarInversion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarInversion.Location = new System.Drawing.Point(58, 161);
+            this.btnModificarInversion.Name = "btnModificarInversion";
+            this.btnModificarInversion.Size = new System.Drawing.Size(120, 104);
+            this.btnModificarInversion.TabIndex = 30;
+            this.btnModificarInversion.UseVisualStyleBackColor = false;
+            this.btnModificarInversion.Click += new System.EventHandler(this.btnModificarInversion_Click);
+            // 
+            // btnEliminarInversion
+            // 
+            this.btnEliminarInversion.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEliminarInversion.BackgroundImage = global::GUI.Properties.Resources.comercio_electronico2;
+            this.btnEliminarInversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEliminarInversion.FlatAppearance.BorderSize = 0;
+            this.btnEliminarInversion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnEliminarInversion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnEliminarInversion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarInversion.Location = new System.Drawing.Point(58, 280);
+            this.btnEliminarInversion.Name = "btnEliminarInversion";
+            this.btnEliminarInversion.Size = new System.Drawing.Size(120, 104);
+            this.btnEliminarInversion.TabIndex = 29;
+            this.btnEliminarInversion.UseVisualStyleBackColor = false;
+            this.btnEliminarInversion.Click += new System.EventHandler(this.btnEliminarInversion_Click);
+            // 
+            // btnVolverMenu
+            // 
+            this.btnVolverMenu.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnVolverMenu.BackgroundImage = global::GUI.Properties.Resources.devolver;
+            this.btnVolverMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVolverMenu.FlatAppearance.BorderSize = 0;
+            this.btnVolverMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnVolverMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnVolverMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolverMenu.Location = new System.Drawing.Point(58, 402);
+            this.btnVolverMenu.Name = "btnVolverMenu";
+            this.btnVolverMenu.Size = new System.Drawing.Size(120, 104);
+            this.btnVolverMenu.TabIndex = 28;
+            this.btnVolverMenu.UseVisualStyleBackColor = false;
+            this.btnVolverMenu.Click += new System.EventHandler(this.btnVolverMenu_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkBlue;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 520);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmCrudInversiones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,8 +340,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaInversiones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

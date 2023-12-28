@@ -224,8 +224,8 @@
             this.btnVolver.BackgroundImage = global::GUI.Properties.Resources.devolver;
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVolver.FlatAppearance.BorderSize = 0;
-            this.btnVolver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnVolver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Location = new System.Drawing.Point(419, 228);
             this.btnVolver.Name = "btnVolver";
@@ -240,8 +240,8 @@
             this.btnCrudVentas.BackgroundImage = global::GUI.Properties.Resources.inserte_moneda;
             this.btnCrudVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCrudVentas.FlatAppearance.BorderSize = 0;
-            this.btnCrudVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCrudVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCrudVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnCrudVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnCrudVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrudVentas.Location = new System.Drawing.Point(648, 228);
             this.btnCrudVentas.Name = "btnCrudVentas";
@@ -256,8 +256,8 @@
             this.btnCrudInversiones.BackgroundImage = global::GUI.Properties.Resources.editar;
             this.btnCrudInversiones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCrudInversiones.FlatAppearance.BorderSize = 0;
-            this.btnCrudInversiones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCrudInversiones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCrudInversiones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnCrudInversiones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnCrudInversiones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrudInversiones.Location = new System.Drawing.Point(174, 228);
             this.btnCrudInversiones.Name = "btnCrudInversiones";

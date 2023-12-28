@@ -103,6 +103,26 @@ namespace GUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap comercio_electronico {
+            get {
+                object obj = ResourceManager.GetObject("comercio-electronico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap comercio_electronico2 {
+            get {
+                object obj = ResourceManager.GetObject("comercio-electronico2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap control_de_acceso {
             get {
                 object obj = ResourceManager.GetObject("control-de-acceso", resourceCulture);
@@ -206,6 +226,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap inserte_moneda2 {
             get {
                 object obj = ResourceManager.GetObject("inserte-moneda2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lapiz {
+            get {
+                object obj = ResourceManager.GetObject("lapiz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
