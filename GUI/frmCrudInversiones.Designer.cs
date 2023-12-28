@@ -46,6 +46,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnExcelInversiones = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnInsertarInversion = new System.Windows.Forms.Button();
             this.btnModificarInversion = new System.Windows.Forms.Button();
@@ -62,6 +63,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox1.Controls.Add(this.btnExcelInversiones);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.btnInsertarInversion);
@@ -104,7 +106,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Cyan;
-            this.label6.Location = new System.Drawing.Point(670, 58);
+            this.label6.Location = new System.Drawing.Point(670, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 31);
             this.label6.TabIndex = 27;
@@ -112,7 +114,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(619, 92);
+            this.txtBuscar.Location = new System.Drawing.Point(619, 58);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(200, 20);
             this.txtBuscar.TabIndex = 26;
@@ -129,7 +131,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvConsultaInversiones);
-            this.groupBox2.Location = new System.Drawing.Point(452, 122);
+            this.groupBox2.Location = new System.Drawing.Point(452, 88);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(514, 340);
             this.groupBox2.TabIndex = 19;
@@ -243,6 +245,22 @@
             this.label3.Size = new System.Drawing.Size(106, 25);
             this.label3.TabIndex = 20;
             this.label3.Text = "Producto";
+            // 
+            // btnExcelInversiones
+            // 
+            this.btnExcelInversiones.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnExcelInversiones.BackgroundImage = global::GUI.Properties.Resources.sobresalir;
+            this.btnExcelInversiones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExcelInversiones.FlatAppearance.BorderSize = 0;
+            this.btnExcelInversiones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnExcelInversiones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnExcelInversiones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcelInversiones.Location = new System.Drawing.Point(458, 431);
+            this.btnExcelInversiones.Name = "btnExcelInversiones";
+            this.btnExcelInversiones.Size = new System.Drawing.Size(120, 85);
+            this.btnExcelInversiones.TabIndex = 33;
+            this.btnExcelInversiones.UseVisualStyleBackColor = false;
+            this.btnExcelInversiones.Click += new System.EventHandler(this.btnExcelInversiones_Click);
             // 
             // pictureBox2
             // 
@@ -372,5 +390,6 @@
         private System.Windows.Forms.Button btnVolverMenu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnExcelInversiones;
     }
 }

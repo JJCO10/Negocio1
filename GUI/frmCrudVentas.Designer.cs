@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -48,13 +49,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnExcelVentas = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnInsertarVenta = new System.Windows.Forms.Button();
             this.btnModificarVenta = new System.Windows.Forms.Button();
             this.btnEliminarVenta = new System.Windows.Forms.Button();
             this.btnVolverMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaVentas)).BeginInit();
@@ -65,6 +66,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox1.Controls.Add(this.btnExcelVentas);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.label6);
@@ -91,13 +93,25 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(856, 484);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(95, 25);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "JJCO10";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Cyan;
-            this.label6.Location = new System.Drawing.Point(670, 58);
+            this.label6.Location = new System.Drawing.Point(670, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 31);
             this.label6.TabIndex = 20;
@@ -105,7 +119,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(619, 92);
+            this.txtBuscar.Location = new System.Drawing.Point(619, 61);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(200, 20);
             this.txtBuscar.TabIndex = 19;
@@ -114,7 +128,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvConsultaVentas);
-            this.groupBox2.Location = new System.Drawing.Point(452, 122);
+            this.groupBox2.Location = new System.Drawing.Point(452, 89);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(514, 340);
             this.groupBox2.TabIndex = 18;
@@ -261,6 +275,22 @@
             this.label1.Text = "Codigo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnExcelVentas
+            // 
+            this.btnExcelVentas.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnExcelVentas.BackgroundImage = global::GUI.Properties.Resources.sobresalir;
+            this.btnExcelVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExcelVentas.FlatAppearance.BorderSize = 0;
+            this.btnExcelVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnExcelVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnExcelVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcelVentas.Location = new System.Drawing.Point(455, 432);
+            this.btnExcelVentas.Name = "btnExcelVentas";
+            this.btnExcelVentas.Size = new System.Drawing.Size(120, 85);
+            this.btnExcelVentas.TabIndex = 34;
+            this.btnExcelVentas.UseVisualStyleBackColor = false;
+            this.btnExcelVentas.Click += new System.EventHandler(this.btnExcelVentas_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::GUI.Properties.Resources.inserte_moneda2;
@@ -345,18 +375,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(856, 484);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 25);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "JJCO10";
-            // 
             // frmCrudVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,5 +423,6 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnExcelVentas;
     }
 }

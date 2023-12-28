@@ -18,3 +18,4 @@ C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.pdb
 C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.frmMenuPrincipal.resources
 C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.frmCrudVentas.resources
 C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.frmCrudInversiones.resources
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Debug\GUI.csproj.ResolveComReference.cache
