@@ -111,6 +111,21 @@ namespace GUI
             }
         }
 
+        private void frmCrudVentas_Load(object sender, EventArgs e)
+        {
+            cargarGrillaVentas(ventaService.ConsultarVenta());
+        }
 
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            CargarVentasFiltro();
+        }
+
+        private void CargarVentasFiltro()
+        {
+            var filtro = txtBuscar.Text;
+            var list = ventaService.BuscarFiltradoVenta(filtro);
+            cargarGrillaVentas(list);
+        }
     }
 }

@@ -48,7 +48,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnInsertarVenta = new System.Windows.Forms.Button();
             this.btnModificarVenta = new System.Windows.Forms.Button();
             this.btnEliminarVenta = new System.Windows.Forms.Button();
@@ -76,7 +75,6 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.btnInsertarVenta);
             this.groupBox1.Controls.Add(this.btnModificarVenta);
             this.groupBox1.Controls.Add(this.btnEliminarVenta);
@@ -106,6 +104,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(200, 20);
             this.txtBuscar.TabIndex = 19;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // groupBox2
             // 
@@ -257,21 +256,6 @@
             this.label1.Text = "Codigo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnBuscar.BackgroundImage = global::GUI.Properties.Resources.buscarVenta;
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(58, 22);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(106, 92);
-            this.btnBuscar.TabIndex = 6;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
             // btnInsertarVenta
             // 
             this.btnInsertarVenta.BackColor = System.Drawing.Color.DarkBlue;
@@ -281,9 +265,9 @@
             this.btnInsertarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
             this.btnInsertarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnInsertarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInsertarVenta.Location = new System.Drawing.Point(58, 120);
+            this.btnInsertarVenta.Location = new System.Drawing.Point(58, 37);
             this.btnInsertarVenta.Name = "btnInsertarVenta";
-            this.btnInsertarVenta.Size = new System.Drawing.Size(106, 92);
+            this.btnInsertarVenta.Size = new System.Drawing.Size(120, 104);
             this.btnInsertarVenta.TabIndex = 5;
             this.btnInsertarVenta.UseVisualStyleBackColor = false;
             this.btnInsertarVenta.Click += new System.EventHandler(this.btnInsertarVenta_Click);
@@ -297,9 +281,9 @@
             this.btnModificarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
             this.btnModificarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnModificarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificarVenta.Location = new System.Drawing.Point(58, 218);
+            this.btnModificarVenta.Location = new System.Drawing.Point(58, 161);
             this.btnModificarVenta.Name = "btnModificarVenta";
-            this.btnModificarVenta.Size = new System.Drawing.Size(106, 92);
+            this.btnModificarVenta.Size = new System.Drawing.Size(120, 104);
             this.btnModificarVenta.TabIndex = 4;
             this.btnModificarVenta.UseVisualStyleBackColor = false;
             // 
@@ -312,9 +296,9 @@
             this.btnEliminarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
             this.btnEliminarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnEliminarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarVenta.Location = new System.Drawing.Point(58, 316);
+            this.btnEliminarVenta.Location = new System.Drawing.Point(58, 280);
             this.btnEliminarVenta.Name = "btnEliminarVenta";
-            this.btnEliminarVenta.Size = new System.Drawing.Size(106, 92);
+            this.btnEliminarVenta.Size = new System.Drawing.Size(120, 104);
             this.btnEliminarVenta.TabIndex = 3;
             this.btnEliminarVenta.UseVisualStyleBackColor = false;
             // 
@@ -327,9 +311,9 @@
             this.btnVolverMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
             this.btnVolverMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
             this.btnVolverMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolverMenu.Location = new System.Drawing.Point(58, 414);
+            this.btnVolverMenu.Location = new System.Drawing.Point(58, 402);
             this.btnVolverMenu.Name = "btnVolverMenu";
-            this.btnVolverMenu.Size = new System.Drawing.Size(106, 92);
+            this.btnVolverMenu.Size = new System.Drawing.Size(120, 104);
             this.btnVolverMenu.TabIndex = 2;
             this.btnVolverMenu.UseVisualStyleBackColor = false;
             this.btnVolverMenu.Click += new System.EventHandler(this.btnVolverMenu_Click);
@@ -351,6 +335,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCrudVentas";
             this.Text = "Gestion de Ventas";
+            this.Load += new System.EventHandler(this.frmCrudVentas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -364,7 +349,6 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnInsertarVenta;
         private System.Windows.Forms.Button btnModificarVenta;
         private System.Windows.Forms.Button btnEliminarVenta;
