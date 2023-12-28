@@ -86,11 +86,11 @@ namespace GUI
                 {
                     int index = dgvConsultaVentas.Rows.Add();
                     DataGridViewRow row = dgvConsultaVentas.Rows[index];
-                    row.Cells["idVenta"].Value = venta.idVenta;
-                    row.Cells["saborBoli"].Value = venta.saborBoli;
-                    row.Cells["cantidadBoli"].Value = venta.cantidadBoli;
-                    row.Cells["precio"].Value = venta.precio;
-                    row.Cells["fechaBoli"].Value = venta.fechaBoli;
+                    row.Cells["dgvIdVenta"].Value = venta.idVenta;
+                    row.Cells["dgvSaborBoli"].Value = venta.saborBoli;
+                    row.Cells["dgvCantidadBoli"].Value = venta.cantidadBoli;
+                    row.Cells["dgvPrecioVenta"].Value = venta.precio;
+                    row.Cells["dgvFechaVenta"].Value = venta.fechaBoli;
                 }
             }
         }
@@ -102,13 +102,15 @@ namespace GUI
                 int index = e.RowIndex;
                 if (index >= 0)
                 {
-                    txtIdBoli.Text = dgvConsultaVentas.Rows[index].Cells["idVenta"].Value.ToString();
-                    txtSaborBoli.Text = dgvConsultaVentas.Rows[index].Cells["saborBoli"].Value.ToString();
-                    txtCantidadBoli.Text = dgvConsultaVentas.Rows[index].Cells["cantidadBoli"].Value.ToString();
+                    txtIdBoli.Text = dgvConsultaVentas.Rows[index].Cells["id_venta"].Value.ToString();
+                    txtSaborBoli.Text = dgvConsultaVentas.Rows[index].Cells["sabor"].Value.ToString();
+                    txtCantidadBoli.Text = dgvConsultaVentas.Rows[index].Cells["cantidad"].Value.ToString();
                     txtPrecioTotalBoli.Text = dgvConsultaVentas.Rows[index].Cells["precio"].Value.ToString();
-                    dtpFechaVenta.Text = dgvConsultaVentas.Rows[index].Cells["fechaBoli"].Value.ToString();
+                    dtpFechaVenta.Text = dgvConsultaVentas.Rows[index].Cells["fecha"].Value.ToString();
                 }
             }
         }
+
+
     }
 }

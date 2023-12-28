@@ -88,11 +88,11 @@ namespace DAL
         {
             Venta venta = new Venta
             {
-                idVenta = Convert.ToString(reader["idVenta"]),
-                saborBoli = Convert.ToString(reader["saborBoli"]),
+                idVenta = Convert.ToString(reader["id_venta"]),
+                saborBoli = Convert.ToString(reader["sabor"]),
                 precio = Convert.ToDouble(reader["precio"]),
-                cantidadBoli = Convert.ToInt32(reader["cantidadBoli"]),
-                fechaBoli = Convert.ToString(reader["fechaBoli"]),
+                cantidadBoli = Convert.ToInt32(reader["cantidad"]),
+                fechaBoli = Convert.ToString(reader["fecha"]),
             };
             return venta;
         }

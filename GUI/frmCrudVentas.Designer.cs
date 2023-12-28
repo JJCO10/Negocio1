@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvConsultaVentas = new System.Windows.Forms.DataGridView();
             this.dgvIdVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,8 +54,6 @@
             this.btnEliminarVenta = new System.Windows.Forms.Button();
             this.btnVolverMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaVentas)).BeginInit();
@@ -87,6 +87,25 @@
             this.groupBox1.Size = new System.Drawing.Size(972, 527);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Cyan;
+            this.label6.Location = new System.Drawing.Point(670, 58);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 31);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Buscar";
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(619, 92);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(200, 20);
+            this.txtBuscar.TabIndex = 19;
             // 
             // groupBox2
             // 
@@ -171,6 +190,7 @@
             // 
             // dtpFechaVenta
             // 
+            this.dtpFechaVenta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaVenta.Location = new System.Drawing.Point(245, 187);
             this.dtpFechaVenta.Name = "dtpFechaVenta";
             this.dtpFechaVenta.Size = new System.Drawing.Size(200, 20);
@@ -322,25 +342,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(226, 520);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(619, 92);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(200, 20);
-            this.txtBuscar.TabIndex = 19;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Cyan;
-            this.label6.Location = new System.Drawing.Point(670, 58);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 31);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Buscar";
             // 
             // frmCrudVentas
             // 
