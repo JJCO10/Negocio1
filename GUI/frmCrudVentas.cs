@@ -97,18 +97,18 @@ namespace GUI
 
         private void dgvConsultaVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvConsultaVentas.Columns[e.ColumnIndex].Name == "ModificarDGV")
-            {
+            //if (dgvConsultaVentas.Columns[e.ColumnIndex].Name == "ModificarDGV")
+            //{
                 int index = e.RowIndex;
                 if (index >= 0)
                 {
-                    txtIdBoli.Text = dgvConsultaVentas.Rows[index].Cells["id_venta"].Value.ToString();
-                    txtSaborBoli.Text = dgvConsultaVentas.Rows[index].Cells["sabor"].Value.ToString();
-                    txtCantidadBoli.Text = dgvConsultaVentas.Rows[index].Cells["cantidad"].Value.ToString();
-                    txtPrecioTotalBoli.Text = dgvConsultaVentas.Rows[index].Cells["precio"].Value.ToString();
-                    dtpFechaVenta.Text = dgvConsultaVentas.Rows[index].Cells["fecha"].Value.ToString();
+                    txtIdBoli.Text = dgvConsultaVentas.Rows[index].Cells["dgvIdVenta"].Value.ToString();
+                    txtSaborBoli.Text = dgvConsultaVentas.Rows[index].Cells["dgvSaborBoli"].Value.ToString();
+                    txtCantidadBoli.Text = dgvConsultaVentas.Rows[index].Cells["dgvCantidadBoli"].Value.ToString();
+                    txtPrecioTotalBoli.Text = dgvConsultaVentas.Rows[index].Cells["dgvPrecioVenta"].Value.ToString();
+                    dtpFechaVenta.Text = dgvConsultaVentas.Rows[index].Cells["dgvFechaVenta"].Value.ToString();
                 }
-            }
+            //}
         }
 
         private void frmCrudVentas_Load(object sender, EventArgs e)
@@ -127,5 +127,77 @@ namespace GUI
             var list = ventaService.BuscarFiltradoVenta(filtro);
             cargarGrillaVentas(list);
         }
+
+        private void btnModificarVenta_Click(object sender, EventArgs e)
+        {
+            ModificarBD();
+        }
+
+        private void ModificarBD()
+        {
+            if (txtIdBoli.Text != "" || txtSaborBoli.Text != "" || txtCantidadBoli.Text != "" || txtPrecioTotalBoli.Text != "" || dtpFechaVenta.Text != "")
+            {
+                Venta venta = new Venta
+                {
+                    idVenta = txtIdBoli.Text,
+                    saborBoli = txtSaborBoli.Text,
+                    cantidadBoli = Convert.ToInt32(txtCantidadBoli.Text),
+                    precio = Convert.ToDouble(txtPrecioTotalBoli.Text),
+                    fechaBoli = Convert.ToString(dtpFechaVenta.Value.ToString("d"))
+                };
+                if (venta == null)
+                {
+                    var msg = ventaService.ModificarVenta(venta);
+                    MessageBox.Show(msg, "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cargarGrillaVentas(ventaService.ConsultarVenta());
+                }
+                else
+                {
+                    var msg = ventaService.ModificarVenta(venta);
+                    MessageBox.Show(msg, "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Faltan datos por ingresar!", "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+        private void btnEliminarVenta_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        /*private void EliminarBD()
+        {
+            if (txtIdBoli.Text != "" && txtSaborBoli.Text != "" && txtCantidadBoli.Text != "" && txtPrecioTotalBoli.Text != "" && dtpFechaVenta.Text != "")
+            {
+                Venta venta = new Venta
+                {
+                    idVenta = txtIdBoli.Text,
+                    saborBoli = txtSaborBoli.Text,
+                    cantidadBoli = Convert.ToInt32(txtCantidadBoli.Text),
+                    precio = Convert.ToDouble(txtPrecioTotalBoli.Text),
+                    fechaBoli = Convert.ToString(dtpFechaVenta.Value.ToString("d"))
+                };
+                if (venta == null)
+                {
+                    var msg = ventaService.ModificarVenta(venta);
+                    MessageBox.Show(msg, "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cargarGrillaVentas(ventaService.ConsultarVenta());
+                }
+                else
+                {
+                    var msg = ventaService.ModificarVenta(venta);
+                    MessageBox.Show(msg, "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Faltan datos por ingresar!", "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }*/
     }
 }

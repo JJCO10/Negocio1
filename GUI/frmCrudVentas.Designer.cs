@@ -286,6 +286,7 @@
             this.btnModificarVenta.Size = new System.Drawing.Size(120, 104);
             this.btnModificarVenta.TabIndex = 4;
             this.btnModificarVenta.UseVisualStyleBackColor = false;
+            this.btnModificarVenta.Click += new System.EventHandler(this.btnModificarVenta_Click);
             // 
             // btnEliminarVenta
             // 
@@ -301,6 +302,7 @@
             this.btnEliminarVenta.Size = new System.Drawing.Size(120, 104);
             this.btnEliminarVenta.TabIndex = 3;
             this.btnEliminarVenta.UseVisualStyleBackColor = false;
+            this.btnEliminarVenta.Click += new System.EventHandler(this.btnEliminarVenta_Click);
             // 
             // btnVolverMenu
             // 

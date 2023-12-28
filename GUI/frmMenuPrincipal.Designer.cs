@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -39,14 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.btnFiltrarVentas = new System.Windows.Forms.Button();
             this.btnCrudVentas = new System.Windows.Forms.Button();
-            this.btnFiltrarInversiones = new System.Windows.Forms.Button();
             this.btnCrudInversiones = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,9 +65,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnVolver);
-            this.groupBox1.Controls.Add(this.btnFiltrarVentas);
             this.groupBox1.Controls.Add(this.btnCrudVentas);
-            this.groupBox1.Controls.Add(this.btnFiltrarInversiones);
             this.groupBox1.Controls.Add(this.btnCrudInversiones);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Location = new System.Drawing.Point(-7, -13);
@@ -78,13 +74,49 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Snow;
+            this.label12.Location = new System.Drawing.Point(838, 498);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(73, 16);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "ICE_bolis";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.DarkBlue;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Cyan;
+            this.label11.Location = new System.Drawing.Point(264, 365);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(69, 16);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "BUSCAR";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.DarkBlue;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Cyan;
+            this.label10.Location = new System.Drawing.Point(766, 376);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 16);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "BUSCAR";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.DarkBlue;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Cyan;
-            this.label7.Location = new System.Drawing.Point(577, 449);
+            this.label7.Location = new System.Drawing.Point(766, 413);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 16);
             this.label7.TabIndex = 14;
@@ -96,7 +128,7 @@
             this.label8.BackColor = System.Drawing.Color.DarkBlue;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Cyan;
-            this.label8.Location = new System.Drawing.Point(577, 413);
+            this.label8.Location = new System.Drawing.Point(600, 413);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(89, 16);
             this.label8.TabIndex = 13;
@@ -108,7 +140,7 @@
             this.label9.BackColor = System.Drawing.Color.DarkBlue;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Cyan;
-            this.label9.Location = new System.Drawing.Point(577, 376);
+            this.label9.Location = new System.Drawing.Point(600, 376);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 16);
             this.label9.TabIndex = 12;
@@ -120,7 +152,7 @@
             this.label6.BackColor = System.Drawing.Color.DarkBlue;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Cyan;
-            this.label6.Location = new System.Drawing.Point(102, 438);
+            this.label6.Location = new System.Drawing.Point(264, 402);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 16);
             this.label6.TabIndex = 11;
@@ -168,7 +200,7 @@
             this.label2.BackColor = System.Drawing.Color.DarkBlue;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Cyan;
-            this.label2.Location = new System.Drawing.Point(660, 181);
+            this.label2.Location = new System.Drawing.Point(663, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 29);
             this.label2.TabIndex = 7;
@@ -202,22 +234,6 @@
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // btnFiltrarVentas
-            // 
-            this.btnFiltrarVentas.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnFiltrarVentas.BackgroundImage = global::GUI.Properties.Resources.seo;
-            this.btnFiltrarVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnFiltrarVentas.FlatAppearance.BorderSize = 0;
-            this.btnFiltrarVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFiltrarVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFiltrarVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltrarVentas.Location = new System.Drawing.Point(735, 228);
-            this.btnFiltrarVentas.Name = "btnFiltrarVentas";
-            this.btnFiltrarVentas.Size = new System.Drawing.Size(130, 134);
-            this.btnFiltrarVentas.TabIndex = 4;
-            this.btnFiltrarVentas.UseVisualStyleBackColor = false;
-            this.btnFiltrarVentas.Click += new System.EventHandler(this.btnFiltrarVentas_Click);
-            // 
             // btnCrudVentas
             // 
             this.btnCrudVentas.BackColor = System.Drawing.Color.DarkBlue;
@@ -227,28 +243,12 @@
             this.btnCrudVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCrudVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCrudVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrudVentas.Location = new System.Drawing.Point(580, 228);
+            this.btnCrudVentas.Location = new System.Drawing.Point(648, 228);
             this.btnCrudVentas.Name = "btnCrudVentas";
             this.btnCrudVentas.Size = new System.Drawing.Size(130, 134);
             this.btnCrudVentas.TabIndex = 3;
             this.btnCrudVentas.UseVisualStyleBackColor = false;
             this.btnCrudVentas.Click += new System.EventHandler(this.btnCrudVentas_Click);
-            // 
-            // btnFiltrarInversiones
-            // 
-            this.btnFiltrarInversiones.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnFiltrarInversiones.BackgroundImage = global::GUI.Properties.Resources.buscar;
-            this.btnFiltrarInversiones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnFiltrarInversiones.FlatAppearance.BorderSize = 0;
-            this.btnFiltrarInversiones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFiltrarInversiones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFiltrarInversiones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltrarInversiones.Location = new System.Drawing.Point(256, 228);
-            this.btnFiltrarInversiones.Name = "btnFiltrarInversiones";
-            this.btnFiltrarInversiones.Size = new System.Drawing.Size(130, 134);
-            this.btnFiltrarInversiones.TabIndex = 2;
-            this.btnFiltrarInversiones.UseVisualStyleBackColor = false;
-            this.btnFiltrarInversiones.Click += new System.EventHandler(this.btnFiltrarInversiones_Click);
             // 
             // btnCrudInversiones
             // 
@@ -259,7 +259,7 @@
             this.btnCrudInversiones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCrudInversiones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCrudInversiones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrudInversiones.Location = new System.Drawing.Point(105, 228);
+            this.btnCrudInversiones.Location = new System.Drawing.Point(174, 228);
             this.btnCrudInversiones.Name = "btnCrudInversiones";
             this.btnCrudInversiones.Size = new System.Drawing.Size(130, 134);
             this.btnCrudInversiones.TabIndex = 1;
@@ -274,42 +274,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(855, 439);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.DarkBlue;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Cyan;
-            this.label10.Location = new System.Drawing.Point(743, 376);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 16);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "BUSCAR";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.DarkBlue;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Cyan;
-            this.label11.Location = new System.Drawing.Point(264, 365);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 16);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "BUSCAR";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.MidnightBlue;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Snow;
-            this.label12.Location = new System.Drawing.Point(838, 498);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(73, 16);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "ICE_bolis";
             // 
             // frmMenuPrincipal
             // 
@@ -332,9 +296,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCrudInversiones;
         private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.Button btnFiltrarVentas;
         private System.Windows.Forms.Button btnCrudVentas;
-        private System.Windows.Forms.Button btnFiltrarInversiones;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;

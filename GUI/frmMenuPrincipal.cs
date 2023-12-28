@@ -24,12 +24,7 @@ namespace GUI
             frmCrudInversiones.Show();
         }
 
-        private void btnFiltrarInversiones_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmFiltrarInversiones frm = new frmFiltrarInversiones();
-            frm.Show();
-        }
+        
 
         private void btnCrudVentas_Click(object sender, EventArgs e)
         {
@@ -38,12 +33,7 @@ namespace GUI
             frm.Show();
         }
 
-        private void btnFiltrarVentas_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmFiltrarVentas frmFiltrarVentas = new frmFiltrarVentas();
-            frmFiltrarVentas.Show();
-        }
+        
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
