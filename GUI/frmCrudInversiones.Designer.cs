@@ -29,37 +29,40 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvConsultaInversiones = new System.Windows.Forms.DataGridView();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtProducto = new System.Windows.Forms.TextBox();
-            this.txtIdInversion = new System.Windows.Forms.TextBox();
-            this.dtpFechaInversion = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dgvIdInversion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvFechaInversion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPrecioInversion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnInsertarInversion = new System.Windows.Forms.Button();
             this.btnModificarInversion = new System.Windows.Forms.Button();
             this.btnEliminarInversion = new System.Windows.Forms.Button();
             this.btnVolverMenu = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvConsultaInversiones = new System.Windows.Forms.DataGridView();
+            this.dgvIdInversion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvFechaInversion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPrecioInversion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtProducto = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txtIdInversion = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtpFechaInversion = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaInversiones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.btnInsertarInversion);
             this.groupBox1.Controls.Add(this.btnModificarInversion);
@@ -83,148 +86,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // groupBox2
+            // label7
             // 
-            this.groupBox2.Controls.Add(this.dgvConsultaInversiones);
-            this.groupBox2.Location = new System.Drawing.Point(452, 122);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(514, 340);
-            this.groupBox2.TabIndex = 19;
-            this.groupBox2.TabStop = false;
-            // 
-            // dgvConsultaInversiones
-            // 
-            this.dgvConsultaInversiones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultaInversiones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvIdInversion,
-            this.dgvFechaInversion,
-            this.dgvProducto,
-            this.dgvPrecioInversion});
-            this.dgvConsultaInversiones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvConsultaInversiones.Location = new System.Drawing.Point(3, 16);
-            this.dgvConsultaInversiones.Name = "dgvConsultaInversiones";
-            this.dgvConsultaInversiones.Size = new System.Drawing.Size(508, 321);
-            this.dgvConsultaInversiones.TabIndex = 0;
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Location = new System.Drawing.Point(234, 409);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(200, 20);
-            this.txtPrecio.TabIndex = 25;
-            // 
-            // txtProducto
-            // 
-            this.txtProducto.Location = new System.Drawing.Point(234, 325);
-            this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(200, 20);
-            this.txtProducto.TabIndex = 24;
-            // 
-            // txtIdInversion
-            // 
-            this.txtIdInversion.Location = new System.Drawing.Point(234, 166);
-            this.txtIdInversion.Name = "txtIdInversion";
-            this.txtIdInversion.Size = new System.Drawing.Size(200, 20);
-            this.txtIdInversion.TabIndex = 23;
-            // 
-            // dtpFechaInversion
-            // 
-            this.dtpFechaInversion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaInversion.Location = new System.Drawing.Point(234, 244);
-            this.dtpFechaInversion.Name = "dtpFechaInversion";
-            this.dtpFechaInversion.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaInversion.TabIndex = 22;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Cyan;
-            this.label4.Location = new System.Drawing.Point(232, 381);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 25);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Precio Producto";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Cyan;
-            this.label3.Location = new System.Drawing.Point(229, 297);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 25);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Producto";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Cyan;
-            this.label2.Location = new System.Drawing.Point(232, 216);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 25);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Fecha Inversion";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Cyan;
-            this.label1.Location = new System.Drawing.Point(232, 138);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 25);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Codigo";
-            // 
-            // dgvIdInversion
-            // 
-            this.dgvIdInversion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            this.dgvIdInversion.HeaderText = "ID";
-            this.dgvIdInversion.Name = "dgvIdInversion";
-            this.dgvIdInversion.Width = 21;
-            // 
-            // dgvFechaInversion
-            // 
-            this.dgvFechaInversion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvFechaInversion.HeaderText = "Fecha Inversion";
-            this.dgvFechaInversion.Name = "dgvFechaInversion";
-            // 
-            // dgvProducto
-            // 
-            this.dgvProducto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvProducto.HeaderText = "Producto";
-            this.dgvProducto.Name = "dgvProducto";
-            // 
-            // dgvPrecioInversion
-            // 
-            this.dgvPrecioInversion.HeaderText = "Total";
-            this.dgvPrecioInversion.Name = "dgvPrecioInversion";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Cyan;
-            this.label6.Location = new System.Drawing.Point(670, 58);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 31);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Buscar";
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(619, 92);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(200, 20);
-            this.txtBuscar.TabIndex = 26;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(856, 484);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(95, 25);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "JJCO10";
             // 
             // btnInsertarInversion
             // 
@@ -285,6 +157,87 @@
             this.btnVolverMenu.Size = new System.Drawing.Size(120, 104);
             this.btnVolverMenu.TabIndex = 28;
             this.btnVolverMenu.UseVisualStyleBackColor = false;
+            this.btnVolverMenu.Click += new System.EventHandler(this.btnVolverMenu_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Cyan;
+            this.label6.Location = new System.Drawing.Point(670, 58);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 31);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Buscar";
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(619, 92);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(200, 20);
+            this.txtBuscar.TabIndex = 26;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(234, 409);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(200, 20);
+            this.txtPrecio.TabIndex = 25;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgvConsultaInversiones);
+            this.groupBox2.Location = new System.Drawing.Point(452, 122);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(514, 340);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
+            // 
+            // dgvConsultaInversiones
+            // 
+            this.dgvConsultaInversiones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsultaInversiones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvIdInversion,
+            this.dgvFechaInversion,
+            this.dgvProducto,
+            this.dgvPrecioInversion});
+            this.dgvConsultaInversiones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvConsultaInversiones.Location = new System.Drawing.Point(3, 16);
+            this.dgvConsultaInversiones.Name = "dgvConsultaInversiones";
+            this.dgvConsultaInversiones.Size = new System.Drawing.Size(508, 321);
+            this.dgvConsultaInversiones.TabIndex = 0;
+            // 
+            // dgvIdInversion
+            // 
+            this.dgvIdInversion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            this.dgvIdInversion.HeaderText = "ID";
+            this.dgvIdInversion.Name = "dgvIdInversion";
+            this.dgvIdInversion.Width = 21;
+            // 
+            // dgvFechaInversion
+            // 
+            this.dgvFechaInversion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvFechaInversion.HeaderText = "Fecha Inversion";
+            this.dgvFechaInversion.Name = "dgvFechaInversion";
+            // 
+            // dgvProducto
+            // 
+            this.dgvProducto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvProducto.HeaderText = "Producto";
+            this.dgvProducto.Name = "dgvProducto";
+            // 
+            // dgvPrecioInversion
+            // 
+            this.dgvPrecioInversion.HeaderText = "Total";
+            this.dgvPrecioInversion.Name = "dgvPrecioInversion";
+            // 
+            // txtProducto
+            // 
+            this.txtProducto.Location = new System.Drawing.Point(234, 325);
+            this.txtProducto.Name = "txtProducto";
+            this.txtProducto.Size = new System.Drawing.Size(200, 20);
+            this.txtProducto.TabIndex = 24;
             // 
             // pictureBox1
             // 
@@ -295,17 +248,78 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label7
+            // txtIdInversion
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(856, 484);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 25);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "JJCO10";
+            this.txtIdInversion.Location = new System.Drawing.Point(234, 166);
+            this.txtIdInversion.Name = "txtIdInversion";
+            this.txtIdInversion.Size = new System.Drawing.Size(200, 20);
+            this.txtIdInversion.TabIndex = 23;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Cyan;
+            this.label1.Location = new System.Drawing.Point(232, 138);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 25);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Codigo";
+            // 
+            // dtpFechaInversion
+            // 
+            this.dtpFechaInversion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaInversion.Location = new System.Drawing.Point(234, 244);
+            this.dtpFechaInversion.Name = "dtpFechaInversion";
+            this.dtpFechaInversion.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaInversion.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Cyan;
+            this.label2.Location = new System.Drawing.Point(232, 216);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(180, 25);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Fecha Inversion";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Cyan;
+            this.label4.Location = new System.Drawing.Point(232, 381);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(180, 25);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Precio Producto";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Cyan;
+            this.label3.Location = new System.Drawing.Point(229, 297);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 25);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Producto";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::GUI.Properties.Resources.seo;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(248, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(193, 125);
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
             // 
             // frmCrudInversiones
             // 
@@ -320,6 +334,7 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaInversiones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -349,5 +364,6 @@
         private System.Windows.Forms.Button btnEliminarInversion;
         private System.Windows.Forms.Button btnVolverMenu;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
