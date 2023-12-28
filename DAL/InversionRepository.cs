@@ -64,6 +64,26 @@ namespace DAL
 
         }
 
+        public string EliminarInversion(Inversion inversion)
+        {
+            SqlCommand cmd = new SqlCommand("SP_ELIMINAR_INVERSION", conexion);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_inversion", inversion.idInversion);
+            cmd.Parameters.AddWithValue("@producto", inversion.producto);
+            cmd.Parameters.AddWithValue("@total_precio", inversion.precioProducto);
+            cmd.Parameters.AddWithValue("@fecha_inversion", inversion.fechaInversion);
+            AbrirConexion();
+            var i = cmd.ExecuteNonQuery();
+            CerrarConexion();
+
+            if (i >= 0)
+            {
+                return $"se elimino la inversion exitosamente";
+            }
+
+            return "datos invalidos de la inversion";
+        }
+
         public List<Inversion> ConsultarInversion()
         {
             List<Inversion> list = new List<Inversion>();

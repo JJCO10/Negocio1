@@ -24,6 +24,11 @@ namespace BLL
             return repository.ModificarInversion(inversion);
         }
 
+        public string EliminarInversion(Inversion inversion)
+        {
+            return repository.EliminarInversion(inversion);
+        }
+
         public List<Inversion> ConsultarInversion()
         {
             var msg = repository.ConsultarInversion();

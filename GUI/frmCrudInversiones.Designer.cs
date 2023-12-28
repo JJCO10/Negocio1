@@ -112,6 +112,7 @@
             this.btnInsertarInversion.Size = new System.Drawing.Size(120, 104);
             this.btnInsertarInversion.TabIndex = 31;
             this.btnInsertarInversion.UseVisualStyleBackColor = false;
+            this.btnInsertarInversion.Click += new System.EventHandler(this.btnInsertarInversion_Click);
             // 
             // btnModificarInversion
             // 
@@ -127,6 +128,7 @@
             this.btnModificarInversion.Size = new System.Drawing.Size(120, 104);
             this.btnModificarInversion.TabIndex = 30;
             this.btnModificarInversion.UseVisualStyleBackColor = false;
+            this.btnModificarInversion.Click += new System.EventHandler(this.btnModificarInversion_Click);
             // 
             // btnEliminarInversion
             // 
@@ -142,6 +144,7 @@
             this.btnEliminarInversion.Size = new System.Drawing.Size(120, 104);
             this.btnEliminarInversion.TabIndex = 29;
             this.btnEliminarInversion.UseVisualStyleBackColor = false;
+            this.btnEliminarInversion.Click += new System.EventHandler(this.btnEliminarInversion_Click);
             // 
             // btnVolverMenu
             // 
@@ -177,6 +180,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(200, 20);
             this.txtBuscar.TabIndex = 26;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // txtPrecio
             // 

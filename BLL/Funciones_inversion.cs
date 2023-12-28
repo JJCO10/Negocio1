@@ -12,6 +12,7 @@ namespace BLL
 
         string RegistrarInversion(Inversion inversion);
         string ModificarInversion(Inversion inversion);
+        string EliminarInversion(Inversion inversion);
         List<Inversion> ConsultarInversion();
 
     }
