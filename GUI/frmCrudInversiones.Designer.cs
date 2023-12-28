@@ -188,6 +188,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(200, 20);
             this.txtPrecio.TabIndex = 25;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // groupBox2
             // 
@@ -211,6 +212,7 @@
             this.dgvConsultaInversiones.Name = "dgvConsultaInversiones";
             this.dgvConsultaInversiones.Size = new System.Drawing.Size(508, 321);
             this.dgvConsultaInversiones.TabIndex = 0;
+            this.dgvConsultaInversiones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultaInversiones_CellContentClick);
             // 
             // dgvIdInversion
             // 
@@ -333,6 +335,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCrudInversiones";
             this.Text = "Gestion de Inversiones";
+            this.Load += new System.EventHandler(this.frmCrudInversiones_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

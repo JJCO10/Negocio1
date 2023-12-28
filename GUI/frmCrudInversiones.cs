@@ -43,7 +43,7 @@ namespace GUI
                     fechaInversion = Convert.ToString(dtpFechaInversion.Value.ToString("d"))
                 };
                 InsertarInversion(inversion);
-               // cargraGrillaInversiones(inversionService.ConsultarInversion());
+                cargarGrillaInversiones(inversionService.ConsultarInversion());
             }
         }
 
@@ -65,7 +65,7 @@ namespace GUI
                     fechaInversion = Convert.ToString(dtpFechaInversion.Value.ToString("d"))
                 };
                 ModificarInversion(inversion);
-                // cargraGrillaInversiones(inversionService.ConsultarInversion());
+                cargarGrillaInversiones(inversionService.ConsultarInversion());
 
             }
             else
@@ -92,7 +92,7 @@ namespace GUI
                     fechaInversion = Convert.ToString(dtpFechaInversion.Value.ToString("d"))
                 };
                 EliminarInversion(inversion);
-                // cargraGrillaInversiones(inversionService.ConsultarInversion());
+                cargarGrillaInversiones(inversionService.ConsultarInversion());
 
             }
             else
@@ -116,7 +116,50 @@ namespace GUI
         {
             var filtro = txtBuscar.Text;
             var list = inversionService.BuscarFiltradoInversion(filtro);
-            //cargarGrillaInversiones(list);
+            cargarGrillaInversiones(list);
+        }
+
+        private void cargarGrillaInversiones(List<Inversion> inversiones)
+        {
+            dgvConsultaInversiones.Rows.Clear();
+            if (inversiones != null)
+            {
+                foreach (var inversion in inversiones)
+                {
+                    int index = dgvConsultaInversiones.Rows.Add();
+                    DataGridViewRow row = dgvConsultaInversiones.Rows[index];
+                    row.Cells["dgvIdInversion"].Value = inversion.idInversion;
+                    row.Cells["dgvProducto"].Value = inversion.producto;
+                    row.Cells["dgvPrecioProducto"].Value = inversion.precioProducto;
+                    row.Cells["dgvFechaInversion"].Value = inversion.fechaInversion;
+                }
+            }
+        }
+
+        private void dgvConsultaInversiones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            if (index >= 0)
+            {
+                txtIdInversion.Text = dgvConsultaInversiones.Rows[index].Cells["dgvIdInversion"].Value.ToString();
+                txtProducto.Text = dgvConsultaInversiones.Rows[index].Cells["dgvProducto"].Value.ToString();
+                txtPrecio.Text = dgvConsultaInversiones.Rows[index].Cells["dgvPrecioInversion"].Value.ToString();
+                dtpFechaInversion.Text = dgvConsultaInversiones.Rows[index].Cells["dgvFechaInversion"].Value.ToString();
+            }
+        }
+
+        private void frmCrudInversiones_Load(object sender, EventArgs e)
+        {
+            cargarGrillaInversiones(inversionService.ConsultarInversion());
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                e.Handled = true;
+                return;
+            }
         }
     }
 }
