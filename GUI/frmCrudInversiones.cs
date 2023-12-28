@@ -130,7 +130,7 @@ namespace GUI
                     DataGridViewRow row = dgvConsultaInversiones.Rows[index];
                     row.Cells["dgvIdInversion"].Value = inversion.idInversion;
                     row.Cells["dgvProducto"].Value = inversion.producto;
-                    row.Cells["dgvPrecioProducto"].Value = inversion.precioProducto;
+                    row.Cells["dgvPrecioInversion"].Value = inversion.precioProducto;
                     row.Cells["dgvFechaInversion"].Value = inversion.fechaInversion;
                 }
             }

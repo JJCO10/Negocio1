@@ -107,10 +107,10 @@ namespace DAL
         {
             Inversion inversion = new Inversion
             {
-                idInversion = Convert.ToString(reader["idInversion"]),
+                idInversion = Convert.ToString(reader["id_inversion"]),
                 producto = Convert.ToString(reader["producto"]),
-                precioProducto = Convert.ToDouble(reader["precioProducto"]),
-                fechaInversion = Convert.ToString(reader["fechaInversion"]),
+                precioProducto = Convert.ToDouble(reader["total_precio"]),
+                fechaInversion = Convert.ToString(reader["fecha_inversion"]),
             };
             return inversion;
         }
