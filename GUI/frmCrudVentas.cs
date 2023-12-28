@@ -191,5 +191,10 @@ namespace GUI
             var msg = ventaService.EliminarVenta(venta);
             MessageBox.Show(msg);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

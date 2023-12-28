@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCrudInversiones.resx">
+      <DependentUpon>frmCrudInversiones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCrudVentas.resx">
       <DependentUpon>frmCrudVentas.cs</DependentUpon>
     </EmbeddedResource>
