@@ -46,23 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmFiltrarInversiones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmFiltrarInversiones.Designer.cs">
-      <DependentUpon>frmFiltrarInversiones.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmCrudInversiones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCrudInversiones.Designer.cs">
       <DependentUpon>frmCrudInversiones.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmFiltrarVentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmFiltrarVentas.Designer.cs">
-      <DependentUpon>frmFiltrarVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCrudVentas.cs">
       <SubType>Form</SubType>
