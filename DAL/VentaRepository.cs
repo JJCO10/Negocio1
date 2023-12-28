@@ -64,6 +64,28 @@ namespace DAL
             return "datos invalidos de la venta";
 
         }
+        public string EliminarVenta(Venta venta)
+        {
+
+            SqlCommand cmd = new SqlCommand("SP_ELIMINAR_VENTA", conexion);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_venta", venta.idVenta);
+            cmd.Parameters.AddWithValue("@sabor", venta.saborBoli);
+            cmd.Parameters.AddWithValue("@precio", venta.precio);
+            cmd.Parameters.AddWithValue("@cantidad", venta.cantidadBoli);
+            cmd.Parameters.AddWithValue("@fecha", venta.fechaBoli);
+            AbrirConexion();
+            var i = cmd.ExecuteNonQuery();
+            CerrarConexion();
+
+            if (i >= 0)
+            {
+                return $"se actualizo la venta exitosamente";
+            }
+
+            return "datos invalidos de la venta";
+
+        }
 
         public List<Venta> ConsultarVenta()
         {

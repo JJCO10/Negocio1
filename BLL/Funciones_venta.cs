@@ -11,6 +11,7 @@ namespace BLL
     {
         string RegistrarVenta(Venta venta);
         string ModificarVenta(Venta Venta);
+        string EliminarVenta(Venta venta);
         List<Venta> ConsultarVenta();
     }
 }

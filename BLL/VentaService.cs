@@ -23,6 +23,11 @@ namespace BLL
             return repository.ModifcarVenta(Venta);
         }
 
+        public string EliminarVenta(Venta venta)
+        {
+            return repository.EliminarVenta(venta);
+        }
+
         public List<Venta> ConsultarVenta()
         {
             var msg = repository.ConsultarVenta();
