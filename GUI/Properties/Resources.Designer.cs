@@ -203,6 +203,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap inserte_moneda2 {
+            get {
+                object obj = ResourceManager.GetObject("inserte-moneda2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap papel_escrito {
             get {
                 object obj = ResourceManager.GetObject("papel-escrito", resourceCulture);
