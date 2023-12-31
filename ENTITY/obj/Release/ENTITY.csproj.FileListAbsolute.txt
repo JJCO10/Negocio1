@@ -1,0 +1,6 @@
+C:\Users\JJCO10\Desktop\Negocio1\ENTITY\bin\Release\ENTITY.dll
+C:\Users\JJCO10\Desktop\Negocio1\ENTITY\bin\Release\ENTITY.pdb
+C:\Users\JJCO10\Desktop\Negocio1\ENTITY\obj\Release\ENTITY.csproj.AssemblyReference.cache
+C:\Users\JJCO10\Desktop\Negocio1\ENTITY\obj\Release\ENTITY.csproj.CoreCompileInputs.cache
+C:\Users\JJCO10\Desktop\Negocio1\ENTITY\obj\Release\ENTITY.dll
+C:\Users\JJCO10\Desktop\Negocio1\ENTITY\obj\Release\ENTITY.pdb
