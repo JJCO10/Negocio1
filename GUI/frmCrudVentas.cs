@@ -56,7 +56,7 @@ namespace GUI
 
         private void btnInsertarVenta_Click(object sender, EventArgs e)
         {
-            if (txtIdBoli.Text == "" || txtSaborBoli.Text == "" || txtCantidadBoli.Text == "" || txtPrecioTotalBoli.Text == "")
+            if (txtIdBoli.Text == "" || cboxSabor.Text == "" || txtCantidadBoli.Text == "" || txtPrecioTotalBoli.Text == "")
             {
                 MessageBox.Show("Por favor, Llene todas las casillas");
             }
@@ -65,7 +65,7 @@ namespace GUI
                 Venta venta = new Venta
                 {
                     idVenta = txtIdBoli.Text,
-                    saborBoli = txtSaborBoli.Text,
+                    saborBoli = cboxSabor.Text,
                     cantidadBoli = Convert.ToInt32(txtCantidadBoli.Text),
                     precio = Convert.ToInt32(txtPrecioTotalBoli.Text),
                     fechaBoli = Convert.ToString(dtpFechaVenta.Value.ToString("d"))
@@ -102,7 +102,7 @@ namespace GUI
             if (index >= 0)
             {
                 txtIdBoli.Text = dgvConsultaVentas.Rows[index].Cells["dgvIdVenta"].Value.ToString();
-                txtSaborBoli.Text = dgvConsultaVentas.Rows[index].Cells["dgvSaborBoli"].Value.ToString();
+                cboxSabor.Text = dgvConsultaVentas.Rows[index].Cells["dgvSaborBoli"].Value.ToString();
                 txtCantidadBoli.Text = dgvConsultaVentas.Rows[index].Cells["dgvCantidadBoli"].Value.ToString();
                 txtPrecioTotalBoli.Text = dgvConsultaVentas.Rows[index].Cells["dgvPrecioVenta"].Value.ToString();
                 dtpFechaVenta.Text = dgvConsultaVentas.Rows[index].Cells["dgvFechaVenta"].Value.ToString();
@@ -129,12 +129,12 @@ namespace GUI
 
         private void btnModificarVenta_Click(object sender, EventArgs e)
         {
-            if (txtIdBoli.Text != "" || txtSaborBoli.Text != "" || txtCantidadBoli.Text != "" || txtPrecioTotalBoli.Text != "" || dtpFechaVenta.Text != "")
+            if (txtIdBoli.Text != "" || cboxSabor.Text != "" || txtCantidadBoli.Text != "" || txtPrecioTotalBoli.Text != "" || dtpFechaVenta.Text != "")
             {
                 Venta venta = new Venta
                 {
                     idVenta = txtIdBoli.Text,
-                    saborBoli = txtSaborBoli.Text,
+                    saborBoli = cboxSabor.Text,
                     cantidadBoli = Convert.ToInt32(txtCantidadBoli.Text),
                     precio = Convert.ToInt32(txtPrecioTotalBoli.Text),
                     fechaBoli = Convert.ToString(dtpFechaVenta.Value.ToString("d"))
@@ -167,12 +167,12 @@ namespace GUI
 
         private void btnEliminarVenta_Click(object sender, EventArgs e)
         {
-            if (txtIdBoli.Text != "" || txtSaborBoli.Text != "" || txtCantidadBoli.Text != "" || txtPrecioTotalBoli.Text != "" || dtpFechaVenta.Text != "")
+            if (txtIdBoli.Text != "" || cboxSabor.Text != "" || txtCantidadBoli.Text != "" || txtPrecioTotalBoli.Text != "" || dtpFechaVenta.Text != "")
             {
                 Venta venta = new Venta
                 {
                     idVenta = txtIdBoli.Text,
-                    saborBoli = txtSaborBoli.Text,
+                    saborBoli = cboxSabor.Text,
                     cantidadBoli = Convert.ToInt32(txtCantidadBoli.Text),
                     precio = Convert.ToInt32(txtPrecioTotalBoli.Text),
                     fechaBoli = Convert.ToString(dtpFechaVenta.Value.ToString("d"))

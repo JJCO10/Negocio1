@@ -19,3 +19,7 @@ C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Release\GUI.csproj.CoreCompileInputs.ca
 C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Release\GUI.csproj.CopyComplete
 C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Release\GUI.exe
 C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Release\GUI.pdb
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Release\GUI.exe.manifest
+C:\Users\JJCO10\Desktop\Negocio1\GUI\bin\Release\GUI.application
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Release\GUI.exe.manifest
+C:\Users\JJCO10\Desktop\Negocio1\GUI\obj\Release\GUI.application

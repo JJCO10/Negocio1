@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnExcelVentas = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -41,7 +43,6 @@
             this.dgvPrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtCantidadBoli = new System.Windows.Forms.TextBox();
             this.txtPrecioTotalBoli = new System.Windows.Forms.TextBox();
-            this.txtSaborBoli = new System.Windows.Forms.TextBox();
             this.txtIdBoli = new System.Windows.Forms.TextBox();
             this.dtpFechaVenta = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,23 +50,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnExcelVentas = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnInsertarVenta = new System.Windows.Forms.Button();
             this.btnModificarVenta = new System.Windows.Forms.Button();
             this.btnEliminarVenta = new System.Windows.Forms.Button();
             this.btnVolverMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cboxSabor = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaVentas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox1.Controls.Add(this.cboxSabor);
             this.groupBox1.Controls.Add(this.btnExcelVentas);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.pictureBox2);
@@ -74,7 +75,6 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.txtCantidadBoli);
             this.groupBox1.Controls.Add(this.txtPrecioTotalBoli);
-            this.groupBox1.Controls.Add(this.txtSaborBoli);
             this.groupBox1.Controls.Add(this.txtIdBoli);
             this.groupBox1.Controls.Add(this.dtpFechaVenta);
             this.groupBox1.Controls.Add(this.label5);
@@ -93,6 +93,22 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // btnExcelVentas
+            // 
+            this.btnExcelVentas.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnExcelVentas.BackgroundImage = global::GUI.Properties.Resources.sobresalir;
+            this.btnExcelVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExcelVentas.FlatAppearance.BorderSize = 0;
+            this.btnExcelVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.btnExcelVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnExcelVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcelVentas.Location = new System.Drawing.Point(455, 432);
+            this.btnExcelVentas.Name = "btnExcelVentas";
+            this.btnExcelVentas.Size = new System.Drawing.Size(120, 85);
+            this.btnExcelVentas.TabIndex = 34;
+            this.btnExcelVentas.UseVisualStyleBackColor = false;
+            this.btnExcelVentas.Click += new System.EventHandler(this.btnExcelVentas_Click);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -104,6 +120,16 @@
             this.label7.Size = new System.Drawing.Size(95, 25);
             this.label7.TabIndex = 22;
             this.label7.Text = "JJCO10";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::GUI.Properties.Resources.inserte_moneda2;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(248, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(193, 125);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
             // label6
             // 
@@ -178,40 +204,36 @@
             // 
             // txtCantidadBoli
             // 
+            this.txtCantidadBoli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidadBoli.Location = new System.Drawing.Point(245, 409);
             this.txtCantidadBoli.Name = "txtCantidadBoli";
-            this.txtCantidadBoli.Size = new System.Drawing.Size(200, 20);
+            this.txtCantidadBoli.Size = new System.Drawing.Size(200, 22);
             this.txtCantidadBoli.TabIndex = 17;
             this.txtCantidadBoli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadBoli_KeyPress);
             // 
             // txtPrecioTotalBoli
             // 
+            this.txtPrecioTotalBoli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecioTotalBoli.Location = new System.Drawing.Point(245, 487);
             this.txtPrecioTotalBoli.Name = "txtPrecioTotalBoli";
-            this.txtPrecioTotalBoli.Size = new System.Drawing.Size(200, 20);
+            this.txtPrecioTotalBoli.Size = new System.Drawing.Size(200, 22);
             this.txtPrecioTotalBoli.TabIndex = 16;
-            // 
-            // txtSaborBoli
-            // 
-            this.txtSaborBoli.Location = new System.Drawing.Point(245, 325);
-            this.txtSaborBoli.Name = "txtSaborBoli";
-            this.txtSaborBoli.Size = new System.Drawing.Size(200, 20);
-            this.txtSaborBoli.TabIndex = 15;
-            this.txtSaborBoli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSaborBoli_KeyPress_1);
             // 
             // txtIdBoli
             // 
+            this.txtIdBoli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdBoli.Location = new System.Drawing.Point(245, 166);
             this.txtIdBoli.Name = "txtIdBoli";
-            this.txtIdBoli.Size = new System.Drawing.Size(200, 20);
+            this.txtIdBoli.Size = new System.Drawing.Size(200, 22);
             this.txtIdBoli.TabIndex = 14;
             // 
             // dtpFechaVenta
             // 
+            this.dtpFechaVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaVenta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaVenta.Location = new System.Drawing.Point(245, 244);
             this.dtpFechaVenta.Name = "dtpFechaVenta";
-            this.dtpFechaVenta.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaVenta.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaVenta.TabIndex = 13;
             // 
             // label5
@@ -274,32 +296,6 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Codigo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // btnExcelVentas
-            // 
-            this.btnExcelVentas.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnExcelVentas.BackgroundImage = global::GUI.Properties.Resources.sobresalir;
-            this.btnExcelVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExcelVentas.FlatAppearance.BorderSize = 0;
-            this.btnExcelVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.btnExcelVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnExcelVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcelVentas.Location = new System.Drawing.Point(455, 432);
-            this.btnExcelVentas.Name = "btnExcelVentas";
-            this.btnExcelVentas.Size = new System.Drawing.Size(120, 85);
-            this.btnExcelVentas.TabIndex = 34;
-            this.btnExcelVentas.UseVisualStyleBackColor = false;
-            this.btnExcelVentas.Click += new System.EventHandler(this.btnExcelVentas_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::GUI.Properties.Resources.inserte_moneda2;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(248, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(193, 125);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
             // 
             // btnInsertarVenta
             // 
@@ -375,6 +371,19 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // cboxSabor
+            // 
+            this.cboxSabor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxSabor.FormattingEnabled = true;
+            this.cboxSabor.Items.AddRange(new object[] {
+            "Corozo",
+            "Guayaba Agria",
+            "Tamarindo"});
+            this.cboxSabor.Location = new System.Drawing.Point(248, 325);
+            this.cboxSabor.Name = "cboxSabor";
+            this.cboxSabor.Size = new System.Drawing.Size(197, 24);
+            this.cboxSabor.TabIndex = 35;
+            // 
             // frmCrudVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,9 +395,9 @@
             this.Load += new System.EventHandler(this.frmCrudVentas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaVentas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -409,7 +418,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCantidadBoli;
         private System.Windows.Forms.TextBox txtPrecioTotalBoli;
-        private System.Windows.Forms.TextBox txtSaborBoli;
         private System.Windows.Forms.TextBox txtIdBoli;
         private System.Windows.Forms.DateTimePicker dtpFechaVenta;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -424,5 +432,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnExcelVentas;
+        private System.Windows.Forms.ComboBox cboxSabor;
     }
 }
